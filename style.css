@@ -1,0 +1,62 @@
+ body {
+    font-family: Arial, sans-serif;
+    background: #CEACAC;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 380px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 { 
+    text-align: center;
+    margin-top: 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #6FABD3;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+button:hover {
+    background: #2980b9;
+}
+
+button:disabled{
+    background: #95a5a6;
+    cursor: not-allowed;
+}
+#hasil {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.ringkasan {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-weight: bold;
+}
