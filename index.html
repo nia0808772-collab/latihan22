@@ -24,7 +24,10 @@
     <input type="number" id="nomor" placeholder="Nomor barang">
     <input type="number" id="hargaedit" placeholder="Harga barang edit">
     <button onclick="edit()">Edit Barang</button>
-  <button onclick="hapus()"> Hapus Barang terakhir</button>
+    
+    <input type="number" id="nomorHapus" placeholder="Nomor barang hapus">
+    <button onclick="hapuNomor()" class="hapus">Hapus Barang</button>
+  <button onclick="hapus()" class="hapus"> Hapus Barang terakhir</button>
     <button onclick="reset()"> reset keranjang</button>
   
     <div id="hasil"></div>

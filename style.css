@@ -1,6 +1,6 @@
  body {
     font-family: Arial, sans-serif;
-    background: #CEACAC;
+    background: #E2AFFF;
     height: 100vh;
     margin: 0;
     display: flex;
@@ -27,7 +27,7 @@ button {
     margin-top: 10px;
     border-radius: 6px;
     border: none;
-    background: #6FABD3;
+    background: #B900FF;
     color: white;
     font-size: 15px;
     cursor: pointer;
@@ -59,4 +59,8 @@ button:disabled{
     padding-top: 10px;
     border-top: 1px solid #ccc;
     font-weight: bold;
+}
+
+.hapus {
+    background: #B17EFF;
 }
