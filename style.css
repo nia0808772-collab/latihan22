@@ -64,3 +64,9 @@ button:disabled{
 .hapus {
     background: #B17EFF;
 }
+
+.hapus2 {
+    width:auto;
+    background: #FF0000;
+    margin-left: 2em;
+}

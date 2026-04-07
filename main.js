@@ -30,7 +30,7 @@ function tampilkan() {
     let harga = dataBarang[i]
     total += harga
     
-    output += "Barang ke-" + (i + 1) + ": Rp " + rupiah(harga) + "<br>"
+    output += "Barang ke-" + (i + 1) + ": Rp " + rupiah(harga) + "<button oneclick='hapusIndex(" + i + ")'class='hapus2'>Hapus</button>" + "<br>"
   }
   
   output += "<hr>Total: Rp" + rupiah(total)
@@ -41,7 +41,6 @@ function tampilkan() {
 function hapus() {
   dataBarang.pop()
   tampilkan()
-}
 // fungsi untuk mereset keranjang
 function reset() {
   dataBarang = []
@@ -86,4 +85,14 @@ function hapusNomor() {
 tampilkan()
 //kosongkan input nomor hapus setelah di hapus
 document.getElementById("nomorHapus").value =""
+}
+
+function hapusIndex(index) {
+  if (index >= 0 && index < dataBarang.length) {
+   
+ dataBarang.splice(index, 1)
+ } else {
+   //jika nomor barang tidak valid, tampilan alert
+   alert("Nomor barang tidak valid")
+}
 }
